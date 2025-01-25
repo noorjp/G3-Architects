@@ -14,8 +14,17 @@ max-width: 1440px;
 margin: 0 auto;
 }
 
+main> section { 
+  margin-top: 130px;
+}
+
 .disply-flex {
   display: flex;
+}
+
+/* color */
+.text-primary {
+  color: rgb(255, 144, 14);
 }
 
 /* dark 02 */
@@ -43,6 +52,12 @@ margin: 0 auto;
   border: none;
   
 }
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
 
 /* header styles */
 
@@ -108,6 +123,75 @@ margin-bottom: 50px;
   width: 100%;
 }
 
+/* team and feature related styles */ 
+
+
+.teams {
+  align-items: center;
+  gap: 76px;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 24px;
+}
+
+.our-features {
+ max-width: 530px;
+}
+
+
+#feature-1 {
+ font-weight: 500;
+}
+
+.feature-description {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+
+/* feature will enjoy */
+
+.list-1 {
+  max-width: 586px;
+  margin-right: 54px;
+
+}
+
+.title-enjoy {
+  border-radius: 8px;
+  padding: 25px 37px 25px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+
+.btn-feature {
+  width: 342px;
+  height: 200px;
+  padding: 45px 42px;
+  font-size: 4.25rem;
+align-items: center;
+}
+
+/* some fact styles  */
+
+.facts-container  {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  border-radius: 8px;
+}
+
+.fact {
+  border: 1px solid #FF900E;
+  width: 240px;
+  height: 240px;
+  
+
+}
+
 /* responsive media quary */
 
 @media screen and (max-width: 576px) {
@@ -115,21 +199,24 @@ margin-bottom: 50px;
     flex-direction: column;
   }
 
-  .nav-item {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .team-img-container {
+    grid-template-columns:repeat(1, 1fr);
+  }
+
+ 
+}
+
+/* medium size devise */
+
+  @media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .disply-flex {
+      flex-direction: column;
+    }
+
+    .team-img-container {
+      grid-template-columns:repeat(2, 1fr);
+    }
+    
     
   }
-
-  .banner-title {
-    font-size: 3rem;
-  }
-
-  .banner-description {
-    font-size: 0.875rem;
-  }
-
-  .banner-content {
-    padding: 0 20px;
-  }
-}
